@@ -1,0 +1,12 @@
+<nav class="navbar bg-body-tertiary fixed-top p-3" style="background: rgb(195,35,165);
+background: linear-gradient(109deg, rgba(195,35,165,1) 15%, rgb(69, 208, 235) 88%);">
+  <div class="container container-fluid">
+    <a class="navbar-brand fw-bolder text-light"><i class="fa-solid fa-cart-plus" style="color: #f9fafb;"></i> DropCart</a>
+    <form class="d-flex" role="search">
+      <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <a *ngIf="!login" routerLink="user/login" class="btn text-light fw-bolder " ><i class="fa-solid fa-user me-2" style="color: #f9fafb;"></i>Login</a>
+      <a  *ngIf="login" routerLink="" (click)="handleclick()"  class="btn text-light fw-bolder " ><i class="fa-solid fa-user me-2" style="color: #f9fafb;"></i>Log out</a>
+
+    </form>
+  </div>
+</nav>
